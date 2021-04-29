@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Page Bibliographique"</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>PAGE BIBLIOGRAPHIQUE</h1>
+	<p>Bonjour! mon nom est Alec Fraser, j'aime faire le velo en montagne et je connais un peu les languages de programmation suivantes:</p>
+	<ol>
+		<li>Python</li>
+		<li>JavaScript</li>
+		<li>Turing</li>
+	    </ol>
+	    <p>Mes liens preferees sont:</p>
+	    <ul>
+		    <li> <a href="http://eelslap.com/">HAHAHA!</a> </li> 
+		    <li> <a href="https://www.spacex.com/vehicles/starship/">WOW! COOL! </a> <li>
+		    <! Les Commentaires sont amusants>
+    </body>
+</html>
