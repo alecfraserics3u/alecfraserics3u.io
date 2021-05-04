@@ -6,22 +6,22 @@
     <title>Cash Register</title>
     <script>
 		console.log("Bienvenue a la caisse.")
-	main_menu = prompt("Tapez le mot de passe pour debuter.")
-	if (main_menu == "ics3"){
-	    item_price = parseFloat(prompt("Quelle est le prix de l'article? (Presets: (g)Gum, (m)Mais souffle, (b) Banane"))
-	    item_amt = parseFloat(prompt("Combien de ces articles se font acheter?"))
-	    if (item_price = "g"){
-	    	alert("Le prix totale est: " , Math.round(item_amt*1.13*100)/100 , "$")
+	mainMenu = prompt("Tapez le mot de passe pour debuter.")
+	if (mainMenu == "ics3"){
+	    itemPrice = parseFloat(prompt("Quelle est le prix de l'article? (Presets: (g)Gum, (m)Mais souffle, (b) Banane"))
+	    itemAmt = parseFloat(prompt("Combien de ces articles se font acheter?"))
+	    if (itemPrice = "g"){
+	    	alert("Le prix totale est: " , Math.round(itemAmt*1.13*100)/100 , "$")
 	    	 
-	    }else if (item_price = "m"){
-	     	alert("Le prix totale est: " , Math.round(2*item_amt*1.13*100)/100 , "$")
+	    }else if (itemPrice = "m"){
+	     	alert("Le prix totale est: " , Math.round(2*itemAmt*1.13*100)/100 , "$")
 	    	 
-	    }else if ( item_price = "b"){
-	    	alert("Le prix totale est: " , Math.round(3*item_amt*1.13*100)/100 , "$")
+	    }else if ( itemPrice = "b"){
+	    	alert("Le prix totale est: " , Math.round(3*itemAmt*1.13*100)/100 , "$")
 	    	 
 	    }else{
 	    	console.log(" ")
-		console.log("Le prix totale est: " , str(Math.round(item_price*item_amt*1.13*100)/100) , "$")}
+		console.log("Le prix totale est: " , str(Math.round(itemPrice*itemAmt*1.13*100)/100) , "$")}
 	}else 
 		alert("VOUS ETES UN VOLEUR, J'APPELE LA POLICE")
     </script>
