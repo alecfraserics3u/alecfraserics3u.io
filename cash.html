@@ -8,9 +8,19 @@
 	console.log("Bienvenue a la caisse.)
 	main_menu = prompt("Tapez le mot de passe pour debbuter.")
 	if main_menu = "poop"
-	    item_price = prompt("Quelle est le prix de l'article?")
-	    item_amt = prompt("Combien de ces articles se font acheter?")
-	    alert("Le prix totale est: " + round(item_price*item_amt*1.13) + "$")
+	    item_price = parseInt(prompt("Quelle est le prix de l'article? (Presets: (g)Gum, (m)Mais souffle, (b) Banane"))
+	    item_amt = parseInt(prompt("Combien de ces articles se font acheter?"))
+	    if item_price == "g"
+	    	item_price = 1
+	    	alert("Le prix totale est: " + round(item_price*item_amt*1.13) + "$")
+	    else if item_price == "m"
+	     	item_price = 3
+	    	alert("Le prix totale est: " + round(item_price*item_amt*1.13) + "$")
+	    else if item_price == "b"
+	    	item_price = 2
+	    	alert("Le prix totale est: " + round(item_price*item_amt*1.13) + "$")
+	    else
+	    	alert("Le prix totale est: " + round(item_price*item_amt*1.13) + "$")
     </script>
 </head>
 
