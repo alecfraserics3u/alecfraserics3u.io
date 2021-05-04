@@ -8,7 +8,7 @@
 		console.log("Bienvenue a la caisse.")
 	main_menu = prompt("Tapez le mot de passe pour debuter.")
 	if (main_menu == "poop"){
-	    	item_price = parseInt(prompt("Quelle est le prix de l'article? (Presets: (g)Gum, (m)Mais souffle, (b) Banane"))
+	    item_price = parseInt(prompt("Quelle est le prix de l'article? (Presets: (g)Gum, (m)Mais souffle, (b) Banane"))
 	    item_amt = parseInt(prompt("Combien de ces articles se font acheter?"))
 	    if (item_price = "g"){
 	    	alert("Le prix totale est: " , Math.round(item_amt*1.13*100)/100 , "$")
@@ -16,12 +16,12 @@
 	    }else if (item_price = "m"){
 	     	alert("Le prix totale est: " , Math.round(2*item_amt*1.13*100)/100 , "$")
 	    	 
-			}else if ( item_price = "b"){
+	    }else if ( item_price = "b"){
 	    	alert("Le prix totale est: " , Math.round(3*item_amt*1.13*100)/100 , "$")
 	    	 
-			}else{
+	    }else{
 	    	console.log(" ")}
-			alert("Le prix totale est: " , Math.round(item_price*item_amt*1.13*100)/100 , "$")
+		alert("Le prix totale est: " , Math.round(item_price*item_amt*1.13*100)/100 , "$")
 	}else 
 		alert("VOUS ETES UN VOLEUR, J'APPELE LA POLICE")
     </script>
