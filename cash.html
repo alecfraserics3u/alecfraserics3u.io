@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cash Register</title>
+    <script>
+       let i=0
+balance = 10000 
+
+function mainCash(){
+  console.log('Please pick one of the following options:')
+  mainMenu = prompt("1 - Deposit Money, 2 - Withdraw Money, 3 - Check Balance")
+  if (mainMenu == '1'){
+    depositAmount = parseInt(prompt("How much money would you like to deposit?"))
+    console.log("Your balance is now: ")
+    console.log(balance + depositAmount)
+    balance += depositAmount
+    nextStep = prompt(('What would you like to do now? 1- exit, 2- return to main menu'))
+    if (nextStep == '1'){
+      console.log("cya")
+    }else if (nextStep == '2'){
+      mainCash()
+    }else{
+      console.log("What the heck are you talking about? Just for that, you're kicked")
+    }
+  } else if (mainMenu == '2'){
+    withAmount = parseInt(prompt("How much money would you like to withdraw?"))
+		if (withAmount > balance || withAmount<1) {
+			console.log('Transaction failed. Either insufficient funds or trying to withdraw less than a dollar.')
+			console.log('Current balance: ', balance)
+			mainCash()
+		} else if(withAmount <= balance){
+			console.log("Your balance is now: ")
+    	console.log(balance - withAmount)
+    	balance += withAmount
+    	nextStep = prompt(('What would you like to do now? 1- exit, 2- return to main menu'))
+    	if (nextStep == '1'){
+      	console.log("cya")
+    	}else if (nextStep == '2'){
+      	mainCash()
+    	}else{
+      	console.log("What the heck are you talking about? Just for that, you're kicked")
+		}
+    
+    }
+   } else{
+     console.log(balance)
+  }
+
+  }
+
+for (i = 0; i < 5; i++){
+  password = prompt("What is your username and password (no spaces)?")
+  if (password == 'poop'){
+    console.log('Access granted')
+    i=6
+    mainCash()
+  } else{
+    console.log('Access denied')
+    i+=1
+  }
+}
+    </script>
+</head>
+
+<body>
+
+</body>
+
+
+
+</html>
