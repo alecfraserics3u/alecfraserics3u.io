@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <title>Cash Register</title>
     <script>
-		console.log("Bienvenue a la caisse.")
-	mainMenu = prompt("Tapez le mot de passe pour debuter.")
-	if (mainMenu == "ics3"){
-	    itemPrice = prompt("Quelle est le prix de l'article? (Presets: (g)Gum, (m)Mais souffle, (b) Banane")
-	    itemAmt = prompt("Combien de ces articles se font acheter?")
-	    if (itemPrice == "g"){
-	    	alert("Le prix totale est: " + Math.round(itemAmt * 1.13 * 100)/100 + "$")
+	mainMenu = prompt("Tapez le mot de passe pour debuter.") /* Code qui demande pour un mot de passe */
+	if (mainMenu == "ics3"){ /* si le mot de passe est correcte, la personne peut continuer */
+	    itemPrice = prompt("Quelle est le prix de l'article? (Presets: (g)Gum, (m)Mais souffle, (b) Banane") /* demande pour le prix de l'article. j'ai ajouter des valeurs deja ajouter pour 3 items. */
+	    itemAmt = prompt("Combien de ces articles se font acheter?") /* Demande le nombre d'articles */
+	    if (itemPrice == "g"){ /* if statement pour les prix preset. */
+	    	alert("Le prix totale est: " + Math.round(itemAmt * 1.13 * 100)/100 + "$") /* puisque la banane vaut seulement 1$ je peut simplement faire le nombre d'items * le tax. Ensuite j'ai fait *100 dans le math.round et /100 a lexterieur pour quil arrondis a 0.00*/
 	    	 
 	    }else if (itemPrice == "m"){
 	     	alert("Le prix totale est: " + Math.round(2.0*itemAmt * 1.13 * 100)/100 + "$")
@@ -20,13 +19,13 @@
 	    	alert("Le prix totale est: " + Math.round(3.0* itemAmt * 1.13 * 100)/100 + "$")
 	    	 
 	    }else{
-		alert("Le prix totale est: " + (Math.round(itemPrice * itemAmt * 1.13 * 100)/100 + "$"))}
+		alert("Le prix totale est: " + (Math.round(itemPrice * itemAmt * 1.13 * 100)/100 + "$"))} /* si la personne insere un nombre au lieu d'un preset, la valeur de l'article sera multiplier par la quantite et le tax.*/
 	}else 
-		alert("VOUS ETES UN VOLEUR, J'APPELE LA POLICE")
+		alert("VOUS ETES UN VOLEUR, J'APPELE LA POLICE") /* Si le mot de passe est incorrecte, ceci sera afficher */
     </script>
 </head>
 
-<body style="background-color:powderblue;">
+<body style="background-color:powderblue;"> <!-- Change la couleur de larriere plan apres que la caisse ce ferme.  -->
 	<h1>La caisse a été fermé.</h1>
 	<p>Mot de passe: ics3</p>
 </body>
