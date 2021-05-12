@@ -7,7 +7,7 @@ window.onload=function() {
     canv=document.getElementById("gc"); 
     ctx=canv.getContext("2d");
     document.addEventListener("keydown",keyPush); // makes the program listen for keyboard input. 
-    setInterval(game,1000/15); // All of this creates a function for the window 
+    setInterval(game,1000/10); // All of this creates a function for the window 
 }
 px=py=10; //player initial position of 10,10
 gs=tc=20; // grid scale and tile count set to 20 (20 tiles of width and height)
