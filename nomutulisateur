@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Menu - Projets d'Alec</title> <!-- Mon titre -->
+        <meta charset="utf-8">
+    </head>
+    <body>
+    prenom = prompt("Quel est votre prenom? ")
+millieu = prompt("Quel est votre nom du millieu? ")
+famille = prompt("Quel est votre nom de famille? ")
+ 
+document.write("initiales: " + prenom[0].toUpperCase() + "." + millieu[0].toUpperCase() + "." + famille[0].toUpperCase() <br>)
+document.write("nom complet: " + prenom + " " + millieu + " " + famille <br>)
+document.write("nom d'utulisateur: " + prenom[0].toLowerCase() + millieu[0].toLowerCase() + famille.toLowerCase() <br>)
+document.write("Autre nom d'utulisateur possible: " + famille.toLowerCase() + prenom.toLowerCase() + "312" <br>)
+    </body>
+</html>
