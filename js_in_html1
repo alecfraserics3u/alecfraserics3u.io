@@ -31,14 +31,15 @@ prixLivraison++ //le prix de livraison change a 3 si la commande est plus que 10
   console.log("")
 }
 totalNoTax = Math.round((tousPrix+prixLivraison)*100)/100 //calcule et arrondis la valeur de la commande avant les taxes
-console.log("++++++++++++++++")
-console.log("RECU DE COMMANDE")
-console.log("++++++++++++++++")
-console.log(nouveau + "                   " + tousPrix + "$")
-console.log("Livraison             " + prixLivraison + "$" )
-console.log("SOUS-TOTAL            " + (totalNoTax) + "$")
-console.log("Taxes                 " + Math.round(113*totalNoTax)/100+ "$") //calcule le tax
-console.log("TOTAL                 " + Math.round(113*totalNoTax)/100 + "$") //ajoute le tax au sous-total
+
+document.write("++++++++++++++++")
+document.write("RECU DE COMMANDE")
+document.write("++++++++++++++++")
+document.write(nouveau + "                   " + tousPrix + "$")
+document.write("Livraison             " + prixLivraison + "$" )
+document.write("SOUS-TOTAL            " + (totalNoTax) + "$")
+document.write("Taxes                 " + Math.round(113*totalNoTax)/100+ "$") //calcule le tax
+document.write("TOTAL                 " + Math.round(113*totalNoTax)/100 + "$") //ajoute le tax au sous-total
 </script>
     
    </body>
