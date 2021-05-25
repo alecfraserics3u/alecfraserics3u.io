@@ -6,8 +6,9 @@
     </head>
     <body>
     <h1>Devoir 2.4: Les structures itératives (...suite)</h1>
-    
-    <script>
+   </body>
+   
+       <script>
     //travail 7
 nouveau="Items: "
 tousPrix=0
@@ -42,6 +43,5 @@ document.write("SOUS-TOTAL            " + (totalNoTax) + "$")
 document.write("Taxes                 " + Math.round(113*totalNoTax)/100+ "$") //calcule le tax
 document.write("TOTAL                 " + Math.round(113*totalNoTax)/100 + "$") //ajoute le tax au sous-total
 </script>
-    
-   </body>
+   
 </html>
