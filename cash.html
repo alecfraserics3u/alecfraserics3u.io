@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Cash Register</title>
     <script>
-	    //travail 7
+//travail 7
 nouveau="Items: "
 tousPrix=0
  
@@ -30,22 +30,15 @@ prixLivraison++ //le prix de livraison change a 3 si la commande est plus que 10
 }
 totalNoTax = Math.round((tousPrix+prixLivraison)*100)/100 //calcule et arrondis la valeur de la commande avant les taxes
 
-document.write("++++++++++++++++")
-document.write("\n")
-document.write("RECU DE COMMANDE\n")
-document.write("\n")
-document.write("++++++++++++++++\n")
-document.write("\n")
-document.write(nouveau + "                   " + tousPrix + "$\n")
-document.write("\n")
-document.write("Livraison             " + prixLivraison + "$\n")
-document.write("\n")
-document.write("SOUS-TOTAL            " + (totalNoTax) + "$\n")
-document.write("\n")
-document.write("Taxes                 " + Math.round(113*totalNoTax)/100+ "$\n") //calcule le tax
-document.write("\n");
-document.write("TOTAL                 " + Math.round(113*totalNoTax)/100 + "$\n") //ajoute le tax au sous-total
-    </script>
+document.write("++++++++++++++++ <br>")
+document.write("RECU DE COMMANDE <br>")
+document.write("++++++++++++++++ <br>")
+document.write(nouveau + "                   " + tousPrix + "$<br>")
+document.write("Livraison             " + prixLivraison + "$ <br>")
+document.write("SOUS-TOTAL            " + (totalNoTax) + "$ <br>")
+document.write("Taxes                 " + Math.round(113*totalNoTax)/100+ "$ <br>") //calcule le tax
+document.write("TOTAL                 " + Math.round(113*totalNoTax)/100 + "$ <br>") //ajoute le tax au sous-total
+	</script>
 </head>
 
 <body style="background-color:powderblue;"> <!-- Change la couleur de larriere plan apres que la caisse ce ferme.  -->
