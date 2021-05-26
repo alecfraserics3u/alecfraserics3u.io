@@ -10,7 +10,8 @@
       
             <script>
         //travail 7
-nouveau="Items: "
+setTimeout(function () {
+  nouveau="Items: "
 tousPrix=0
  
 for (let i=0; i<1;){
@@ -41,8 +42,7 @@ console.log("Livraison             " + prixLivraison + "$" )
 console.log("SOUS-TOTAL            " + (totalNoTax) + "$")
 console.log("Taxes                 " + Math.round(113*totalNoTax)/100+ "$") //calcule le tax
 console.log("TOTAL                 " + Math.round(113*totalNoTax)/100 + "$") //ajoute le tax au sous-total
-
-
+}, 200)
       </script>
       
     </body>
