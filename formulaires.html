@@ -21,9 +21,19 @@
       <label>Nom de famille</label>
       <input name="famille"> 
       </div>
-
+  <script>
+  function message(){
+      var prenom = document.getElementById("prenom").value
+      var millieu = document.getElementById("millieu").value
+      var famille = document.getElementById("famille").value
+      
+      console.log("initiales: " + prenom[0].toUpperCase() + "." + millieu[0].toUpperCase() + "." + famille[0].toUpperCase())
+      console.log("nom complet: " + prenom + " " + millieu + " " + famille)
+      console.log("nom d'utulisateur: " + prenom[0].toLowerCase() + millieu[0].toLowerCase() + famille.toLowerCase())
+      }
+      </script>
       <div>
-      <input type="button" id="submit" onclick=alert(message) value="Soumettre le fromulaire">
+      <input type="button" id="submit" onclick=alert(message().innerHTML) value="Soumettre le fromulaire">
       </div>
 
 
