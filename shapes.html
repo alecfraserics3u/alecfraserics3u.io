@@ -4,20 +4,17 @@
   <body>
   
     <p>
-      <a onclick='let ast = "";
-// Tout le code pour celui-ci est la meme que #3 sauf pour la condition if. 
-for(let i = 1; i < 10; i++ ){
- for(let j = 1; j < 10; j++){
-   if(i >= 10-j ){ 
-     ast = ast + "*";
-   }else{
-     ast = ast + " ";
-   }
- }
- ast = ast + "\n"
-}
-document.write(ast)
-' href="https://alecfraserics3u.github.io/alecfraserics3u.io/formes.html">Quand vous cliquez sur ce lien, le code .js commencera.</a>
+      <a onclick='prenom = prompt("Quel est votre prenom? ")
+millieu = prompt("Quel est votre nom du millieu? ")
+famille = prompt("Quel est votre nom de famille? ")
+ 
+alert("initiales: " + prenom[0].toUpperCase() + "." + millieu[0].toUpperCase() + "." + famille[0].toUpperCase())
+alert("nom complet: " + prenom + " " + millieu + " " + famille)
+alert("nom d'utulisateur: " + prenom[0].toLowerCase() + millieu[0].toLowerCase() + famille.toLowerCase())
+alert("Autre nom d'utulisateur possible: " + famille.toLowerCase() + prenom.toLowerCase() + "312")
+
+
+' href="https://alecfraserics3u.github.io/alecfraserics3u.io/index.html">Quand vous cliquez sur ce lien, le code .js commencera.</a>
       <<p>
     
   </body
