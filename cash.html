@@ -1,1 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Spin-off of "La caisse"</title>
+        <meta charset="utf-8">
+    </head>
+	<a href="https://alecfraserics3u.github.io/alecfraserics3u.io/">  <!-- Lien vers l'index -->                Retour au menu <---- </a>
+    <body>
+      <p>2.4 Les structures itératives (...suite) (Travail 7)</p>
+      
+            <script>
+        //travail 7
+nouveau="Items: "
+tousPrix=0
+ 
+for (let i=0; i<1;){
+  itemAchetee = prompt("Quel item achetes-tu? ") //prompt pour le nom de l'item,
+  prixItem = parseFloat(prompt("Quel est le prix de cet item? "))
+  cont = confirm("Voulez-vous ajouter un item? ")
+  if (cont == true){ //si oui, la boucle recommence
+    i=0;
+  } else {
+    i=1;
+  }
+  nouveau = nouveau + itemAchetee + ", " //stocke tous les items
+  tousPrix = tousPrix + prixItem  //stocke le prix total
+ 
+}
+prixLivraison = 2 // le prix de livraison commence a 2 et change a 3 dans le code ci-dessous
+if (tousPrix >= 10){
+prixLivraison++ //le prix de livraison change a 3 si la commande est plus que 10$
+} else{
+  console.log("")
+}
+totalNoTax = Math.round((tousPrix+prixLivraison)*100)/100 //calcule et arrondis la valeur de la commande avant les taxes
+console.log("++++++++++++++++")
+console.log("RECU DE COMMANDE")
+console.log("++++++++++++++++")
+console.log(nouveau + "                   " + tousPrix + "$")
+console.log("Livraison             " + prixLivraison + "$" )
+console.log("SOUS-TOTAL            " + (totalNoTax) + "$")
+console.log("Taxes                 " + Math.round(113*totalNoTax)/100+ "$") //calcule le tax
+console.log("TOTAL                 " + Math.round(113*totalNoTax)/100 + "$") //ajoute le tax au sous-total
 
+
+      </script>
+      
+    </body>
+</html>
