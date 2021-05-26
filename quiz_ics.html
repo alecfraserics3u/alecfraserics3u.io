@@ -1,12 +1,98 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+     <meta charset="utf-8">
+     <title>Page d’inscription</title>
   </head>
   <body>
+    <h1>Formulaire par Alec Fraser</h1>
+    <form action="" method="GET">
+
+      <div>
+        <label for="prenom">Prenom</label>
+      <input type="text" id="prenom"> 
+      </div>
+
+       <div>
+        <label for="WEB">Que sont les deux mots qui vont ensemble pour creer: INTERNET? </label>
+      <input type="text" id="WEB"> 
+      </div>
+
+      <div>
+      
+      <label for="radAime">Est-ce-que le RAM s'efface quand l'ordinateur s'eteint?</label>
+      <input id="rad1" name="radGroupe" type="radio" value="oui" /> 
+      <label for="rad1">oui</label> 
+      <input id="rad1" name="radGroupe" type="radio" value="non" /> 
+      <label for="rad1">non</label> 
+
+      </div>
+
+      <div>
+      <label for="langues">Quelles langue est utuliser pour creer des sites web? </label>
+      <input type="checkbox" id="langues" value="JS" /> 
+<label for="langues">JS</label> 
+
+<input type="checkbox" id="langues" value="HTML" /> 
+<label for="langues">HTML</label> 
+
+<input type="checkbox" id="langues" value="CSS" /> 
+<label for="langues">CSS</label>
+
+<input type="checkbox" id="langues" value="Python" /> 
+<label for="langues">Python</label>
+
+<input type="checkbox" id="langues" value="Autre" /> 
+<label for="langues">Autre langues</label>
+
+      </div>
+   
+      <div>
+      <input type="button" id="submit" onclick="message()" value="Soumettre le formulaire">
+      </div>
+      
+      <div id="divScore"></div>
+    
+      <br><br>
+  <script>
+function message(){
+      var prenom = document.getElementById("prenom").value;
+      var internet = document.getElementById("WEB").value;
+      var ram = document.getElementById("rad1").value;
+      var langues = document.getElementById("langues").value;
+      var score = 0
+
+      if (internet=="Interconnected Network"){
+        score+=1
+      }else{
+        score=score
+      }
+
+      if (ram == "oui"){
+        score+=1
+      } else{
+        score=score
+      }
+
+      if (langues = "HTML"){
+        score+=1
+      } else{
+        score=score
+      }
+      score = "RESULTAT: " + score + "/3 \n Bravo " + prenom + "!"
+
+      divScore.innerHTML = score
+      
+     
+}
+      </script>
+ 
+
+      
+      </form>
+
+
     <script src="script.js"></script>
+    
   </body>
 </html>
