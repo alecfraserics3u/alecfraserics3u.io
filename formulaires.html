@@ -5,6 +5,13 @@
      <title>Page d’inscription</title>
   </head>
   <body>
+document.write(<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="utf-8">
+     <title>Page d’inscription</title>
+  </head>
+  <body>
     <form action="" method="GET">
 
       <div>
@@ -22,18 +29,18 @@
       <input name="famille"> 
       </div>
   <script>
-  function message(){
-      var prenom = document.getElementById("prenom").value
-      var millieu = document.getElementById("millieu").value
-      var famille = document.getElementById("famille").value
-      
-      console.log("initiales: " + prenom[0].toUpperCase() + "." + millieu[0].toUpperCase() + "." + famille[0].toUpperCase())
-      console.log("nom complet: " + prenom + " " + millieu + " " + famille)
-      console.log("nom d'utulisateur: " + prenom[0].toLowerCase() + millieu[0].toLowerCase() + famille.toLowerCase())
-      }
+function message(){
+      var prenom = document.getElementById("prenom").value;
+      var millieu = document.getElementById("millieu").value;
+      var famille = document.getElementById("famille").value;
+
+        initiales = "initiales: " + prenom[0].toUpperCase() + "." + millieu[0].toUpperCase() + "." + famille[0].toUpperCase()
+        nomComplet = "nom complet: " + prenom + " " + millieu + " " + famille
+        nomUtulisateur = "nom d'utulisateur: " + prenom[0].toLowerCase() + millieu[0].toLowerCase() + famille.toLowerCase()
+}
       </script>
       <div>
-      <input type="button" id="submit" onclick=alert(message().innerHTML) value="Soumettre le fromulaire">
+      <input type="button" id="submit" onclick=alert(document.write("AFFICHER LE MESSAGE ICI")) value="Soumettre">
       </div>
 
 
@@ -42,5 +49,7 @@
 
     <script src="script.js"></script>
     
+  </body>
+</html>)
   </body>
 </html>
