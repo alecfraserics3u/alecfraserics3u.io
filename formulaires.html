@@ -27,8 +27,12 @@
       <input type="button" id="submit" onclick="message()" value="Soumettre le formulaire">
       </div>
       
-      <div id="divAffiche"></div>
+      <div id="divInitiales"></div>
+      <div id="divComplet"></div>
+      <div id="divUtulisateur"></div>
       
+      
+      <br><br>
   <script>
 function message(){
       var prenom = document.getElementById("prenom").value;
@@ -36,12 +40,14 @@ function message(){
       var famille = document.getElementById("famille").value;
       var affiche = document.getElementById("divAffiche")
 
-      initiales = "initiales: " + prenom[0].toUpperCase() + "." + millieu[0].toUpperCase() + "." + famille[0].toUpperCase()
-      nomComplet = "nom complet: " + prenom + " " + millieu + " " + famille
-      nomUtulisateur = "nom d'utulisateur: " + prenom[0].toLowerCase() + millieu[0].toLowerCase() + famille.toLowerCase()
-      affiche.innerHTML = initiales
-      affiche.innerHTML = nomComplet
-      affiche.innerHTML = nomUtulisateur
+      initiales = "Initiales: " + prenom[0].toUpperCase() + "." + millieu[0].toUpperCase() + "." + famille[0].toUpperCase()
+      nomComplet = "Nom complet: " + prenom + " " + millieu + " " + famille
+      nomUtulisateur = "Nom d'utulisateur: " + prenom[0].toLowerCase() + millieu[0].toLowerCase() + famille.toLowerCase()
+      divInitiales.innerHTML = initiales
+      divComplet.innerHTML = nomComplet
+      divUtulisateur.innerHTML = nomUtulisateur
+
+     
 }
       </script>
  
