@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>MADLIBS</title>
+ </head>
+ <body>
+ 
+    <h1>MadLibs Par Alec Fraser</h1>
+     
+    <ul>
+      <li>nom: <input type="text" id="nom"></li>
+      <li>adjectif: <input type="text" id="adj"></li>
+      <li>nom propre: <input type="text" id="pers"></li>
+    </ul>
+     
+    <button id="submit" onclick=libIt()>Soumettre</button>
+      
+    <p>Mad Libs generee: 
+    <div id="story"></div>
+    </p>
+ 
+    <script>
+        var construct = document.getElementById('submit');
+        var libIt = function() {
+            var storyDiv = document.getElementById("story");
+            var nom = document.getElementById('nom').value;
+            var adj = document.getElementById('adj').value;
+            var pers = document.getElementById('pers').value;
+            storyDiv.innerHTML ="Les " + nom + " sont tres " + adj + " juste comme " + pers + "!";
+            };
+    </script>
+  
+ </body>
+</html>
