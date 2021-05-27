@@ -1,0 +1,99 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+</style>
+</head>
+<body>
+  <h1>Defi de logique!</h1>
+  <p>Rosalie aime bien ses élèves. <br> Marie vend des légumes. <br> Jean a horreur des fleurs.</p>
+  <h2>Qui fait quoi?</h2>
+  <p>SVP ecrire 'oui' dans la boite qui convient</p>
+  <br>
+<table style="width:100%">
+  <tr>
+    <th>Métiers/Noms</th>
+    <th>Boulanger</th>
+    <th>Fleuriste</th> 
+    <th>Maitresse</th>
+    <th>Marchand</th>
+  </tr>
+  <tr>
+    <td>Rosalie</td>
+    <td><input type="text" id="null"></td>
+    <td><input type="text" id="null"></td>
+    <td><input type="text" id="rosAns"></td>
+    <td><input type="text" id="null"></td>
+  </tr>
+  <td>Paul</td>
+    <td><input type="text" id="null"></td>
+    <td><input type="text" id="pauAns"></td>
+    <td><input type="text" id="null"></td>
+    <td><input type="text" id="null"></td>
+  </tr>
+  <tr>
+    <td>Jean</td>
+    <td><input type="text" id="jeaAns"></td>
+    <td><input type="text" id="null"></td>
+    <td><input type="text" id="null"></td>
+    <td><input type="text" id="null"></td>
+  
+  <tr>
+     <td>Marie</td>
+    <td><input type="text" id="null"></td>
+    <td><input type="text" id="null"></td>
+    <td><input type="text" id="null"></td>
+    <td><input type="text" id="marAns"></td>
+  </tr>
+</table>
+
+<div id='complete'></div>
+
+<button id="submit" onclick='run()' affiche>Soumettre</button>
+
+<script>
+function run(){
+  var rosCorrect = document.getElementById('rosAns').value
+  var pauCorrect = document.getElementById('pauAns').value
+  var jeaCorrect = document.getElementById('jeaAns').value
+  var marCorrect = document.getElementById('marAns').value
+  var score = 0
+  if (rosCorrect == 'oui'){
+    score++
+  } else{
+    score=score
+  }
+    if (pauCorrect == 'oui'){
+    score++
+  } else{
+    score=score
+  }
+    if (jeaCorrect == 'oui'){
+    score++
+  } else{
+    score=score
+  }
+    if (marCorrect == 'oui'){
+    score++
+  } else{
+    score=score
+  }
+  output=""
+  if (score==4){
+    output=("Vous-avez toute eu bien! 4/4!")
+  } else if (score==3){
+    output=("Presque, il vous reste une erreure! 3/4!")
+  } else if (score==2){
+    output=("Oooh we're half way theree! Vous avez eu 2/4")
+  } else{
+    output=("UTULISE TON CERVEAU!!!")
+  }
+  complete.innerHTML = output
+}
+</script>
+</body>
+</html>
