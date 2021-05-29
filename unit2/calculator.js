@@ -1,20 +1,23 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Afficheur de nom, 2.6</title>
-  </head>
-  <body>
-    <h2>Afficheur de nom, par Alec Fraser</h2>
-    <form>
-      Quel est votre prenom? <input type="text" id="prenom"><br>
-      Quel est votre nom du millieu? <input type="text" id="millieu"><br>
-      Quel est votre dernier nom? <input type="text" id="famille"><br><br>
-      <input type="button" onclick="getInitials()" value="Afficher les initiales" style="background-color:red; border-color:blue; color:white">
-      <input type="button" onclick="getFull()" value="Afficher le nom complet" style="background-color:red; border-color:blue; color:white">
-      <input type="button" onclick="getUser()" value="Afficher le nom d'utulisateur" style="background-color:red; border-color:blue; color:white">
-    </form>
-    <p id="print"></p>
-    <script src="formulaire.js"></script>
-  </body>
-</html>
+var quan = parseInt(prompt("Combien de nombres voulez-vous entrer? ")) //variable pour la quantite de nombres que lutulisateur veut entrer
+var tot=0;
+var max=0;
+var min=10**10
+for (let i=1; i < quan+1; i++){ // arrete quand le nombre diterations est plus grand que la quantite de nombres
+var num = parseInt(prompt("Choisis un nombre: (1-100)")) // continue a demander pour un nombre a chaque iteration
+tot = tot + num //stocke le total de tous les nombres
+if (num > max){
+  max = num //stocke le max comme le nombre le plus grand
+}else{
+  alert("")
+}
+if (num < min){
+  min=num //stocke le min comme le nombre le plus petit
+}else{
+  alert("")
+}
+}
+alert("La somme est: " + tot) //imprime tous les resultats
+alert("Nombres d'entrees: " + quan)
+alert("La moyenne est: " + (tot/quan))
+alert("Val. min. : " + min)
+alert("Val. max. : " + max)
