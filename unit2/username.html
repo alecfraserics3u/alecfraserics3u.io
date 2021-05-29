@@ -1,21 +1,21 @@
-<!DOCTYPE>
-<HTML>
-  <head></head>
-  <body>
-  
-    <p>
-      <a onclick='prenom = prompt("Quel est votre prenom? ")
-millieu = prompt("Quel est votre nom du millieu? ")
-famille = prompt("Quel est votre nom de famille? ")
- 
-alert("initiales: " + prenom[0].toUpperCase() + "." + millieu[0].toUpperCase() + "." + famille[0].toUpperCase())
-alert("nom complet: " + prenom + " " + millieu + " " + famille)
-alert("nom dutulisateur: " + prenom[0].toLowerCase() + millieu[0].toLowerCase() + famille.toLowerCase())
-alert("Autre nom dutulisateur possible: " + famille.toLowerCase() + prenom.toLowerCase() + "312")
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Travail 2</title>
+</head>
+<body>
+    <form>
+        Premier nom:<input type='text' id='firstName'/><br><br>
+        Nom du milieu: <input type='text' id='midName'/><br><br>
+       Dernier nom:  <input type='text' id='lastName'/><br><br>
+        <input type='button' onclick='getInit()' value='Afficher les initiales'/>
+        <input type='button' onclick='getName()' value='Afficher le nom complet'/>
+        <input type='button' onclick='getUti()' value="Afficher le nom d'utilisateur"/>
+    </form>
 
-
-' href="https://alecfraserics3u.github.io/alecfraserics3u.io/index.html">Quand vous cliquez sur ce lien, le code .js commencera.</a>
-      <<p>
+    <div id='output'></div>
     
-  </body
-</HTML>
+    <script src='script.js'></script>
+</body>
+</html>
