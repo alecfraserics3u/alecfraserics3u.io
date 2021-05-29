@@ -1,26 +1,24 @@
-function getInit() {
-  let prenom = document.getElementById('firstName').value;
-  let nomMil = document.getElementById('midName').value;
-  let nomFam = document.getElementById('lastName').value;
-  let init = prenom.charAt(0).toUpperCase() + '.' + nomMil.charAt(0).toUpperCase() + '.' + nomFam.charAt(0).toUpperCase();
-  document.getElementById('output').innerHTML = init;
+function getInitials(){
+  prenom = document.getElementById('prenom').value
+  millieu = document.getElementById('millieu').value
+  famille = document.getElementById('famille').value
+ initials = "Vos initiales sont: " + prenom[0].toUpperCase() + '.' + millieu[0].toUpperCase() + '.' + famille[0].toUpperCase()
+  document.getElementById('print').innerHTML = initials;
 }
-
-function getName() {
-  let prenom = document.getElementById('firstName').value;
-  let nomMil = document.getElementById('midName').value;
-  let nomFam = document.getElementById('lastName').value;
-  prenom = prenom.charAt(0).toUpperCase() + prenom.slice(1).toLowerCase();
-  nomMil = nomMil.charAt(0).toUpperCase() + nomMil.slice(1).toLowerCase();
-  nomFam = nomFam.charAt(0).toUpperCase() + nomFam.slice(1).toLowerCase();
-  let nomComp = prenom + ' ' + nomMil + ' ' + nomFam;
-  document.getElementById('output').innerHTML = nomComp;
+function getFull(){
+    prenom = document.getElementById('prenom').value
+    millieu = document.getElementById('millieu').value
+    famille = document.getElementById('famille').value
+    prenom = prenom[0].toUpperCase() + prenom.slice(1).toLowerCase()
+    millieu = millieu[0].toUpperCase() + millieu.slice(1).toLowerCase()
+    famille = famille[0].toUpperCase() + famille.slice(1).toLowerCase()
+    fullName = "Votre nom complet est: " + prenom + " " + millieu + " " + famille
+    document.getElementById('print').innerHTML = fullName;
 }
-
-function getUti() {
-  let prenom = document.getElementById('firstName').value;
-  let nomMil = document.getElementById('midName').value;
-  let nomFam = document.getElementById('lastName').value;
-  let nomUti = prenom.charAt(0).toLowerCase() + nomMil.charAt(0).toLowerCase() + nomFam.toLowerCase();
-  document.getElementById('output').innerHTML = nomUti;
+function getUser(){
+  prenom = document.getElementById('prenom').value
+  millieu = document.getElementById('millieu').value
+  famille = document.getElementById('famille').value
+  user = "Votre nom d'utulisateur est: " + prenom[0].toLowerCase()+millieu[0].toLowerCase()+famille.toLowerCase()	 
+  document.getElementById('print').innerHTML = user;
 }
