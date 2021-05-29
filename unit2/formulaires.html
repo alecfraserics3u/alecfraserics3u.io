@@ -1,62 +1,26 @@
-<!DOCTYPE html>
-<html>
-  <head>
-     <meta charset="utf-8">
-     <title>Page d’inscription</title>
-  </head>
-  <body>
-    <h1>Formulaire par Alec Fraser</h1>
-    <form action="" method="GET">
-
-      <div>
-        <label for="prenom">Prenom</label>
-      <input type="text" id="prenom"> 
-      </div>
-
-      <div>
-      <label>Nom du millieu</label>
-      <input type="text" id="millieu"> 
-      </div>
-
-      <div>
-      <label>Nom de famille</label>
-      <input type="text" id="famille"> 
-      </div>
-   
-      <div>
-      <input type="button" id="submit" onclick="message()" value="Soumettre le formulaire">
-      </div>
-      
-      <div id="divInitiales"></div>
-      <div id="divComplet"></div>
-      <div id="divUtulisateur"></div>
-      
-    
-      <br><br>
-  <script>
-function message(){
-      var prenom = document.getElementById("prenom").value;
-      var millieu = document.getElementById("millieu").value;
-      var famille = document.getElementById("famille").value;
-      var affiche = document.getElementById("divAffiche")
-
-      initiales = "Initiales: " + prenom[0].toUpperCase() + "." + millieu[0].toUpperCase() + "." + famille[0].toUpperCase()
-      nomComplet = "Nom complet: " + prenom + " " + millieu + " " + famille
-      nomUtulisateur = "Nom d'utulisateur: " + prenom[0].toLowerCase() + millieu[0].toLowerCase() + famille.toLowerCase()
-      divInitiales.innerHTML = initiales
-      divComplet.innerHTML = nomComplet
-      divUtulisateur.innerHTML = nomUtulisateur
-      
-     
+function getInit() {
+  let prenom = document.getElementById('firstName').value;
+  let nomMil = document.getElementById('midName').value;
+  let nomFam = document.getElementById('lastName').value;
+  let init = prenom.charAt(0).toUpperCase() + '.' + nomMil.charAt(0).toUpperCase() + '.' + nomFam.charAt(0).toUpperCase();
+  document.getElementById('output').innerHTML = init;
 }
-      </script>
- 
 
-      
-      </form>
+function getName() {
+  let prenom = document.getElementById('firstName').value;
+  let nomMil = document.getElementById('midName').value;
+  let nomFam = document.getElementById('lastName').value;
+  prenom = prenom.charAt(0).toUpperCase() + prenom.slice(1).toLowerCase();
+  nomMil = nomMil.charAt(0).toUpperCase() + nomMil.slice(1).toLowerCase();
+  nomFam = nomFam.charAt(0).toUpperCase() + nomFam.slice(1).toLowerCase();
+  let nomComp = prenom + ' ' + nomMil + ' ' + nomFam;
+  document.getElementById('output').innerHTML = nomComp;
+}
 
-
-    <script src="script.js"></script>
-    
-  </body>
-</html>
+function getUti() {
+  let prenom = document.getElementById('firstName').value;
+  let nomMil = document.getElementById('midName').value;
+  let nomFam = document.getElementById('lastName').value;
+  let nomUti = prenom.charAt(0).toLowerCase() + nomMil.charAt(0).toLowerCase() + nomFam.toLowerCase();
+  document.getElementById('output').innerHTML = nomUti;
+}
