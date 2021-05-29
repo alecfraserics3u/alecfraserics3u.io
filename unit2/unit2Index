@@ -1,1 +1,22 @@
 
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Menu - Projets d'Alec</title> <!-- Mon titre -->
+        <meta charset="utf-8">
+	
+    </head>
+    <body>
+	    
+	    	 <p> Unité 2: <br></p> <!-- sous-titre sur ma page -->
+	    <p> Devoir 2.6 </p><ol>
+	    <li><a href="https://alecfraserics3u.github.io/alecfraserics3u.io/unit2/cash.html"> Caisse (methode 1) <br></a></li>
+	    <li><a href= "https://alecfraserics3u.github.io/alecfraserics3u.io/unit2/calculator.html"> Calculatrice (methode 2) <br> </a></li>
+	    <li><a href= "https://alecfraserics3u.github.io/alecfraserics3u.io/unit2/username.html"> Afficheur de nom(methode 3) <br> </a></li>
+	    <li><a href= "https://alecfraserics3u.github.io/alecfraserics3u.io/unit2/formulaires.html"> Formulaire d'afficheur de nom<br> </a></li>
+	     <li><a href= "https://alecfraserics3u.github.io/alecfraserics3u.io/unit2/quiz_ics.html"> Quiz ICS <br> </a></li>
+	     <li><a href= "https://alecfraserics3u.github.io/alecfraserics3u.io/unit2/madlibs.html"> Mad Libs <br> </a></li>
+	    <li><a href= "https://alecfraserics3u.github.io/alecfraserics3u.io/unit2/logique.html">Defi de logique <br> </a></li>
+	    </ol>
+    </body>
+</html>
