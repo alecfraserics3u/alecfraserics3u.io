@@ -6,54 +6,27 @@
   </head>
   <body>
     <h1>Formulaire par Alec Fraser</h1>
-    <form action="" method="GET">
 
-      <div>
-        <label for="prenom">Prenom</label>
-      <input type="text" id="prenom"> 
-      </div>
+        Prenom <input id="prenom"><br>
+      Que sont les deux mots qui vont ensemble pour creer: INTERNET? <input type="text" id="WEB"> <br>
 
-       <div>
-        <label for="WEB">Que sont les deux mots qui vont ensemble pour creer: INTERNET? (aucune maj.) </label>
-      <input type="text" id="WEB"> 
-      </div>
+      Est-ce-que le RAM s'efface quand l'ordinateur s'eteint?<input id="rad1" name="radGroupe" type="radio" value="oui" />oui
+      <input id="rad2" name="radGroupe" type="radio" value="non" />non <br>
 
-      <div>
-      
-      <label for="radGroupe">Est-ce-que le RAM s'efface quand l'ordinateur s'eteint?</label>
-      <input id="rad1" name="radGroupe" type="radio" value="oui" />oui
-      <input id="rad2" name="radGroupe" type="radio" value="non" />non
+      Quelles langue est utuliser pour creer des sites web? JS<input type="checkbox" id="js" value="js" /> 
+      HTML <input type="checkbox" id="html" value="HTML" /> 
+      CSS <input type="checkbox" id="css" value="CSS" /> 
+      Python <input type="checkbox" id="python" value="Python" /> 
+      Autre<input type="checkbox" id="autre" value="Autre" /> 
 
-      </div>
-
-      <div>
-      <label for="langues">Quelles langue est utuliser pour creer des sites web?</label>
-      <input type="checkbox" id="js" value="js" /> 
-<label for="langues">JS</label> 
-
-<input type="checkbox" id="html" value="HTML" /> 
-<label for="langues">HTML</label> 
-
-<input type="checkbox" id="css" value="CSS" /> 
-<label for="langues">CSS</label>
-
-<input type="checkbox" id="python" value="Python" /> 
-<label for="langues">Python</label>
-
-<input type="checkbox" id="autre" value="Autre" /> 
-<label for="langues">Autre langues</label>
-
-      </div>
-   
-      <div>
       <input type="button" id="submit" onclick="message()" value="Soumettre le formulaire">
-      </div>
-      
-      <div id="divScore"></div>
-    
       <br><br>
+      <div id="divScore"></div>
+      <br>
+      <em><div id="divCorrecton"></div></em>
+
   <script>
-function message(){
+    function message(){
       var prenom = document.getElementById("prenom").value;
       var internet = document.getElementById("WEB").value;
       var ram = document.getElementById("rad1");
@@ -63,44 +36,28 @@ function message(){
       var python = document.getElementById("python");
       var autre = document.getElementById("autre");
       var score = 0
+      var correction = ""
 
       if (internet=="interconnected network"){
         score+=1
       }else{
-        score=score
+        correction = correction + "Pour la question 1, la reponse est en fait \"interconnected network\" \n "
       }
-
      if (ram.checked) {
         score+=1
       } else{
-        score=score
+       correction = correction +"Pour la question 2, la reponse est en fait oui!\n "
       }
-
-      if (html.checked) {
-        score+=1
-      } else if (js.checked){
-        score+=1
-      } else if(css.checked){
+      if (html.checked && js.checked && css.checked){
         score+=1
       } else{
-        score=score
+        correction = correction +"Pour la question 3, la reponse est en fait js,html et css.\n"
       }
-    
-
+      divCorrecton.innerHTML = correction
       score = "RESULTAT: " + score + "/3 \n Bravo " + prenom + "!"
-
       divScore.innerHTML = score
-      
-     
-}
-      </script>
- 
-
-      
-      </form>
-
-
-    <script src="script.js"></script>
-    
+    }
+  </script>
+</form>
   </body>
 </html>
