@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body style="background-color:black">
+  <div style="color:white" >
+	<h1 class="poorText">Table Moyen</h1>
+	<h1>
+		<form action="/tables.html">
+			<button class="nbutton">Retour</button>   
+    </form> </h1>  
+    <h2 >Vos cartes: </h2>
+      <div id="cartes-joueur"></div>
+      <div id="valeur-joueur"></div>
+      <div id="cartes-joueur-hit"></div>
+      <div id="valeur-joueur-2"></div>
+      <div id="total-chips"></div>
+  
+    <h2>Cartes du croupier: </h2>
+    <div id="carte-1-croupier"></div>
+    <div id="carte-2-croupier"></div>
+    <div id="cartes-autres-croupier"></div>
+    <div id="valeur-croupier"></div>
+   <button onclick="frappe()" class="nbutton">frapper!</button>
+   <button onclick="rester()" class="nbutton">rester!</button>
+   <button onclick="window.location.reload()" class="nbutton"> recommencer!</button>
+</div>
+<script src="normal_code.js"></script>
+</body>
+</html>
